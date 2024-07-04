@@ -33,10 +33,40 @@
         button{
             padding: 0 10px;
         }
+
+        
+        a{
+            height: 40px;
+            width: fit-content;
+            margin-top: 20px;
+
+            align-self: center;
+        }
+        .return-btn{
+            height: 40px;
+            width: fit-content;
+            padding: 0 20px;
+
+            font-size: 1rem;
+
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            background-color: orangered;
+
+            cursor: pointer;
+        }
+        .return-btn:hover{
+            background-color: orange;
+            color: white;
+            transform: translateY(-7px);
+            transition-duration: 0.3s;
+            box-shadow: 0px 10px 20px #6a6c6d98;
+        }
     </style>
 </head>
 <body>
-    <form>
+    <form method="">
         <label for="nome">Nome:</label>
         <input id="nome" type="text">
         <br>
@@ -72,5 +102,7 @@
         <button>Limpar</button>
         <button>Enviar</button>
     </form>
+
+    <a href="../index.html"><button type="button" class="return-btn">VOLTAR</button></a>
 </body>
 </html>
